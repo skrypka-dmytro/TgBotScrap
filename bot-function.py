@@ -3,7 +3,8 @@ import telebot
 from telegram import send_message, URL
 
 
-bot = telebot.TeleBot("TOKEN", parse_mode=None)
+TOKEN = "5913717117:AAGIJCq8J4hG_yGFWwhBWih8auy5NvdX_dQ"
+bot = telebot.TeleBot(TOKEN, parse_mode=None)
 
 
 @bot.message_handler(commands=["start"])
@@ -19,4 +20,5 @@ def rating(message):
         bot.send_message(message.chat.id, "Oops, something went wrong, please try again")
 
 
-bot.polling()
+if __name__ == "__main__":
+     bot.polling(none_stop=True)

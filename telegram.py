@@ -1,12 +1,8 @@
-import os
-
 from bs4 import BeautifulSoup
 import requests
 
 import random
 
-
-TOKEN = os.environ.get("TOKEN")
 URL = "https://paper-trader.frwd.one"
 
 
