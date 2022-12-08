@@ -22,4 +22,4 @@ def send_message(message):
     response = requests.post(URL, data=from_data)
     soup = BeautifulSoup(response.text, "html.parser")
     image = soup.find("img")["src"]
-    return image
+    return image[1:]
