@@ -3,7 +3,6 @@ import telebot
 from telegram import send_message, URL
 
 
-TOKEN = "5913717117:AAGIJCq8J4hG_yGFWwhBWih8auy5NvdX_dQ"
 bot = telebot.TeleBot(TOKEN, parse_mode=None)
 
 
